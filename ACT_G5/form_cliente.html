@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Cliente</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO CLIENTE </h1>
+    </header>
+    <main>
+        <form action="prueba.html" method="post">
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            INFORMACION DEL CLIENTE 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            INFORMACION PERSONAL
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="nombres"> Nombres: </label></td>
+                        <td> 
+                            <input 
+                                type="text" 
+                                name="nombres" 
+                                id="nombres"
+                                placeholder="Ingrese su nombre"
+                                minlength="2"
+                                value="Daniela"
+                                required
+                            >
+                        </td>
+                        <td><label for="apellidos"> Apellidos : </label></td>
+                        <td> 
+                            <input 
+                                type="text" 
+                                name="apellidos" 
+                                id="apellidos"
+                                placeholder="Ingrese sus apellidos"
+                                autofocus
+                                minlength="2"
+                                value="Flores"
+                                required
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="cedula">  CI:  </label></td>
+                        <td>
+                            <input 
+                                type="text" 
+                                name="cedula" 
+                                id="cedula" 
+                                placeholder="Ingrese su numero de cedula" 
+                                maxlength="10"
+                                minlength="10"
+                                value="1732656954"
+                                required
+                            >
+                        </td>
+                        <td><label for="edad"> Edad: </label></td>
+                        <td>
+                            <input 
+                                type="number" 
+                                name="edad" 
+                                id="edad" 
+                                placeholder="Ingrese su edad" 
+                                maxlength="2"
+                                min="18"
+                                value="19"
+                                required
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Seleccione su sexo:</label></td>
+                        <td>
+                            <label for="hombre">Masculino</label>
+                            <input type="radio" name="hombre" id="hombre" value="hombre" ></input>
+                            <br>
+                            <label for="mujer">Femenino</label>
+                            <input type="radio" name="mujer" id="mujer" value="mujer"  checked></input>
+                        </td>
+                        <td><label for="fecha_nacimiento"> Fecha de Nacimiento: </label></td>
+                        <td>
+                            <input 
+                                type="date" 
+                                name="fecha_nacimiento" 
+                                id="fecha_nacimiento" 
+                                placeholder="Fecha de nacimiento" 
+                                value="2007-10-21"
+                                min="1950-01-01"
+                                max="2007-12-31"
+                                required
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="direccion">  Direccion:  </label></td>
+                        <td colspan="3">
+                            <input 
+                                type="text" 
+                                name="direccion" 
+                                id="direccion" 
+                                placeholder="Ingrese su direccion" 
+                                
+                                maxlength="100"
+                                minlength="2"
+                                value="Sangolqui"
+                                required
+                            >
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colspan="4">INFORMACION DE CONTACTO </td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefono">  Telefono :  </label></td>
+                        <td>
+                            <input 
+                                type="text" 
+                                name="telefono" 
+                                id="telefono" 
+                                placeholder="Ingrese su numero de telefono" 
+                                
+                                maxlength="10"
+                                minlength="10"
+                                value="0998888888"
+                                required
+                            >
+                        </td>
+                        <td><label for="correo">  Correo :  </label></td>
+                        <td>
+                            <input 
+                                type="text" 
+                                name="correo" 
+                                id="correo" 
+                                placeholder="Ingrese su correo electronico" 
+                                maxlength="10"
+                                minlength="10"
+                                value="daflores2@espe.edu.ec"
+                                required
+                            >
+                        </td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <table width="20%">
+                        <tr>
+                            <td>
+                               <input 
+                                    type="reset" 
+                                    name="limpiar" 
+                                    id="limpiar" 
+                                    value="LIMPIAR">
+                            </td>
+                            <td>
+                                <input 
+                                    type="submit" 
+                                    name="siguiente" 
+                                    id="siguiente" 
+                                    value="SIGUIENTE"
+                                    >
+                            </td>
+                        </tr>
+                    </table>
+                </tfoot>
+            </table>
+        </form>
+    </main>
+    <foot>
+
+    </foot>
+</body>
+</html>

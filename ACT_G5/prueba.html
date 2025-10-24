@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECCIÓN DE PRODUCTO</title>
+</head>
+<body>
+    <form action="form_factura.html" method="post">
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th colspan="7">SELECCIÓN DE PRODUCTO</th>
+                </tr>
+                <tr>
+                    <th>CÓDIGO</th>
+                    <th>PRODUCTO</th>
+                    <th>TALLA </th>
+                    <th>COLOR</th>
+                    <th>ESTILO/CORTE</th>
+                    <th>PRECIO UNITARIO</th>
+                    <th>CANTIDAD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="codigo" id="codigo" placeholder="Ej: PANT23" value="PANT23" required maxlength="10">
+                    </td>
+                    
+                    <td>
+                        <input type="search" name="busque su producto" id="busque_su_producto" placeholder="buscar por producto" value="Pantalón Jeans" required>
+
+                    </td>
+
+                    <td>
+                        <label><input type="checkbox" name="talla" > S</label>
+                        <label><input type="checkbox" name="talla" > M</label>
+                        <label><input type="checkbox" name="talla" > L</label>
+                        <label><input type="checkbox" name="talla" > XL</label>
+                    </td>
+
+                    <td>
+                        <input type="color" name="color1" id="color1" value="#000080" required>
+                    </td>
+
+                    <td>
+                        <input type="text" name="estilo" id="estilo" placeholder="Ej: Regular Fit" value="Regular Fit" required>
+                    </td>
+                    
+                    <td>
+                        <input type="number" name="precio" id="precio" value="20.00" readonly>
+                    </td>
+
+                    <td>
+                        <input type="number" name="cantidad" id="cantidad" min="1" max="99" value="2" required>
+                    </td>
+                </tr>
+                   <tr>
+                    <td>
+                        <input type="text" name="codigo" id="codigo" placeholder="Ej: PANT23" value="PANT23" required maxlength="10">
+                    </td>
+                    
+                    <td>
+                        <select name="producto 1" id="producto 1" required>
+                            <option value="Pantalon Jeans" selected>Pantalón Jeans</option>
+                            <option value="camisa Casual">Camisa Casual</option>
+                            <option value="vestido Verano">Vestido Verano</option>
+                            <option value="chaqueta Cuero">Chaqueta Cuero</option>
+                            <option value="gorras">Grras</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label><input type="checkbox" name="talla" > S</label>
+                        <label><input type="checkbox" name="talla" > M</label>
+                        <label><input type="checkbox" name="talla" > L</label>
+                        <label><input type="checkbox" name="talla" > XL</label>
+                    </td>
+
+                    <td>
+                        <input type="color" name="color1" id="color1" value="#000080" required>
+                    </td>
+
+                    <td>
+                        <input type="text" name="estilo" id="estilo" placeholder="Ej: Regular Fit" value="Regular Fit" required>
+                    </td>
+                    
+                    <td>
+                        <input type="number" name="precio" id="precio" value="20.00" readonly>
+                    </td>
+
+                    <td>
+                        <input type="number" name="cantidad" id="cantidad" min="1" max="99" value="2" required>
+                    </td>
+                </tr>
+                                <tr>
+                    <td>
+                        <input type="text" name="codigo" id="codigo" placeholder="Ej: PANT23" value="PANT23" required maxlength="10">
+                    </td>
+                    
+                    <td>
+                        <select name="producto 1" id="producto 1" required>
+                            <option value="Pantalon Jeans" selected>Pantalón Jeans</option>
+                            <option value="camisa Casual">Camisa Casual</option>
+                            <option value="vestido Verano">Vestido Verano</option>
+                            <option value="chaqueta Cuero">Chaqueta Cuero</option>
+                            <option value="gorras">Grras</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label><input type="checkbox" name="talla" > S</label>
+                        <label><input type="checkbox" name="talla" > M</label>
+                        <label><input type="checkbox" name="talla" > L</label>
+                        <label><input type="checkbox" name="talla" > XL</label>
+                    </td>
+
+                    <td>
+                        <input type="color" name="color1" id="color1" value="#000080" required>
+                    </td>
+
+                    <td>
+                        <input type="text" name="estilo" id="estilo" placeholder="Ej: Regular Fit" value="Regular Fit" required>
+                    </td>
+                    
+                    <td>
+                        <input type="number" name="precio" id="precio" value="20.00" readonly>
+                    </td>
+
+                    <td>
+                        <input type="number" name="cantidad" id="cantidad" min="1" max="99" value="2" required>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <input type="text" name="codigo_2" id="codigo_2" placeholder="Ej: CAMI30" value="CAMI30">
+                    </td>
+                    <td>
+                        <select name="producto_2" id="producto_2">
+                            <option value="Pantalon_Jeans">Pantalón Jeans</option>
+                            <option value="Camisa_Casual" selected>Camisa Casual</option>
+                            <option value="Vestido_Verano">Vestido Verano</option>
+                            <option value="Chaqueta_Cuero">Chaqueta Cuero</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="talla_2[]" value="XS"> XS</label>
+                        <label><input type="checkbox" name="talla_2[]" value="S" checked> S</label>
+                        <label><input type="checkbox" name="talla_2[]" value="M"> M</label>
+                        <label><input type="checkbox" name="talla_2[]" value="L"> L</label>
+                    </td>
+                    <td>
+                        <input type="color" name="color_2" id="color_2" value="#FFFFFF">
+                    </td>
+                    <td>
+                        <input type="text" name="estilo_2" id="estilo_2" placeholder="Ej: Slim Fit" value="Slim Fit">
+                    </td>
+                    <td>
+                        <input type="number" name="precio_unitario_2" id="precio_unitario_2" value="35.50" readonly>
+                    </td>
+                    <td>
+                        <input type="number" name="cantidad_2" id="cantidad_2" min="0" max="99" value="1">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="7">
+                        <button type="submit">Generar Factura</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
+
+
