@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO INTERNO</title>
+
+    <style>
+        h1 {
+            color: darkblue;
+            text-align: center;
+            text-shadow: 3px 3px 3px lightgray;
+        }
+        label {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: 5px 5px 5px lightgray;
+            color: darkblue;
+        }
+        label[for="masculino"], label[for="femenino"] {
+            color: darkslategray;
+        }
+        input[type="text"] {
+            color: green;
+            font-size: 20px;
+            text-decoration: green underline;
+            border: 2px solid #00796b;
+            background-color: rgba(0, 255, 255, 0.173);
+            border-radius: 8px;
+            padding: 10px;
+            width: 25%;
+            margin: auto;
+            height: 10px;
+        }
+        select {
+            color: green;
+            font-size: 20px;
+            text-decoration: green dashed underline;
+            border: 2px solid #00796b;
+            background-color: rgba(0, 255, 255, 0.173);
+            border-radius: 8px;
+            padding: 5px;
+            width: 21%;
+            margin: auto;
+            height: 40px;
+        }
+        textarea {
+            color: green;
+            font-size: 20px;
+            text-decoration: green dotted underline;
+            border: 2px solid #00796b;
+            background-color: rgba(0, 255, 255, 0.173);
+            border-radius: 8px;
+            padding: 10px;
+            width: 40%;
+            margin: auto;
+            height: 50px;
+        }
+
+        input[type="radio"] {
+            accent-color: green;
+            transform: scale(1.5);
+            margin: 10px;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px lightgray;
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+        
+        input[type="checkbox"] {
+            accent-color: green;
+            transform: scale(1.5);
+            margin: 10px;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px lightgray;
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>PAGINA</h1></header>
+    <main>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre">
+        <hr>
+        <br>
+        <label for="colorfavorito">Color Favorito:</label>
+        <select name="colorfavorito" id="colorfavorito">
+            <option value="azul">Azul</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+        </select>
+        <hr>
+        <br>
+        <label for="comentario">INGRESA UN COMENTARIO: </label>
+        <textarea name="comentario" id="comentario"></textarea>
+        <hr>
+        <br>
+        <label for="genero">Género:</label>
+        <input type="radio" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+        <hr>
+        <br>
+        <input type="checkbox" id="terminos" name="terminos">
+        <label for="terminos">Acepto los términos y condiciones</label>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>

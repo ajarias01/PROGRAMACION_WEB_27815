@@ -1,0 +1,51 @@
+h1 {
+    color: darkblue;
+    text-align: center;
+    text-shadow: 3px 3px 3px lightgray;
+}
+label {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 5px 5px 5px lightgray;
+    color: darkblue;
+}
+label[for="masculino"], label[for="femenino"] {
+        color: darkslategray;
+}
+
+input[type="text"] {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: right;                      
+    caret-color: green;                  
+    direction: ltr;                        
+    min-width: 150px;
+}
+select {
+    background-image: linear-gradient(135deg, #d1c4e9, #b39ddb);
+    text-transform: uppercase;
+    outline: 1px solid #b0b0b0;
+    letter-spacing: 3px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+textarea {
+    line-height: 1.5;
+    resize: both;
+    word-spacing: 3px;
+    font-style: italic;
+    overflow-y: auto;
+}
+input[type="radio"] {
+    filter: drop-shadow(0 0 4px #ff8a65);
+    opacity: 0.9;
+    vertical-align: middle;
+    cursor: grab;
+    border-radius: 50%;
+}
+input[type="checkbox"] {
+    aspect-ratio: 1/1;
+    rotate: 5deg;
+    scale: 1.2;
+    mix-blend-mode: multiply;
+    accent-color: seagreen;
+}
